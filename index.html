@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>ENCRIPTADOR DE TEXTO</title>
+</head>
+
+<body id="body">
+  <div class="container">
+    <div class="form-container">
+      <h1>ENCRIPTADOR DE TEXTO</h1>
+      <form>
+        <textarea class="form-control" id="form-control" rows="5" placeholder="Ingresa tu mensaje"></textarea>
+        <br>
+        <div class="button-container">
+          <button type="button" class="btn btn-primary" id="btn-primary">ENCRIPTAR</button>
+          <button type="button" class="btn btn-secondary" id="btn-secondary">DESENCRIPTAR</button>
+          <button type="button" id="btn-limpiar">limpiar</button>
+        </div>
+      </form>
+    </div>
+    <div class="result-container" id="result-container"></div>
+    <div class="container-instucciones" style="margin: 20px;">
+
+    <p>
+      <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Instrucciones</a>
+      <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Contacto</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body" style="color:black">
+            - Funciona solo con letras minusculas
+            <br>
+            - No deben ser utilizados letras con acentos ni caracteres especiales.
+           <br>
+            Un ejemplo: 
+            <br>
+           "gato" => "gaitober"
+           <br>
+           "gaitober" => "gato"
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body"style="color:black">
+            <b>Autor: </b>
+            Esmeralda del Rocio Velazquez Delgado 
+            <br>
+            <b>Github:</b>
+            <a href="https://github.com/Esmeralda-Velazquez">https://github.com/Esmeralda-Velazquez</a>
+            <b>Correo:</b> 
+            velazquezesmeraldard@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
